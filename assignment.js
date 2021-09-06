@@ -1,4 +1,4 @@
- 
+
  function kilometerToMeter (kilomrter) {
     var meter = kilomrter / 1000;
     return meter ;
@@ -22,22 +22,22 @@ console.log(budgetCalculator(2 ,3,4));
 
 
 
-function tinyFriend(friends) {
+function megaFriend(friends) {
   if (friends.length == 0) {
     return "Please enter at least one name";
   } else {
-    var smallest = friends[0];
+    var bigest = friends[0];
     for (var i = 0; i < friends.length; i++) {
       if (friends[i].length == 0) {
         return "Please enter each name correctly";
-      } else if (smallest.length < friends[i].length) {
-        smallest = friends[i];
+      } else if (bigest.length < friends[i].length) {
+        bigest = friends[i];
       }
     }
-    return smallest;
+    return bigest;
   }
 }
 
 friendsList = ["apple", "himel", "sadat", "opel", "imran"];
-var smallestName = tinyFriend(friendsList);
-console.log(smallestName);
+var bigestName = tinyFriend(friendsList);
+console.log(bigestName);
